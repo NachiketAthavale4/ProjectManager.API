@@ -22,3 +22,5 @@ C:\Users\Admin\source\repos\ProjectManager\ProjectManager.Tests\obj\Debug\Projec
 C:\Users\Admin\source\repos\ProjectManager\ProjectManager.Tests\obj\Debug\ProjectManager.Tests.csproj.CopyComplete
 C:\Users\Admin\source\repos\ProjectManager\ProjectManager.Tests\obj\Debug\ProjectManager.Tests.dll
 C:\Users\Admin\source\repos\ProjectManager\ProjectManager.Tests\obj\Debug\ProjectManager.Tests.pdb
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager.Tests\bin\Debug\NLog.dll
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager.Tests\bin\Debug\NLog.xml

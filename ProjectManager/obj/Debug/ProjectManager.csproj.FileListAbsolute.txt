@@ -62,3 +62,5 @@ C:\Users\Admin\source\repos\ProjectManager\ProjectManager\obj\Debug\ProjectManag
 C:\Users\Admin\source\repos\ProjectManager\ProjectManager\obj\Debug\ProjectManager.csproj.CopyComplete
 C:\Users\Admin\source\repos\ProjectManager\ProjectManager\obj\Debug\ProjectManager.dll
 C:\Users\Admin\source\repos\ProjectManager\ProjectManager\obj\Debug\ProjectManager.pdb
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager\bin\NLog.dll
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager\bin\NLog.xml
