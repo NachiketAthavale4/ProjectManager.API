@@ -24,3 +24,7 @@ C:\Users\Admin\source\repos\ProjectManager\ProjectManager.Tests\obj\Debug\Projec
 C:\Users\Admin\source\repos\ProjectManager\ProjectManager.Tests\obj\Debug\ProjectManager.Tests.pdb
 C:\Users\Admin\source\repos\ProjectManager\ProjectManager.Tests\bin\Debug\NLog.dll
 C:\Users\Admin\source\repos\ProjectManager\ProjectManager.Tests\bin\Debug\NLog.xml
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager.Tests\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager.Tests\bin\Debug\System.Web.Cors.dll
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager.Tests\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager.Tests\bin\Debug\Newtonsoft.Json.xml

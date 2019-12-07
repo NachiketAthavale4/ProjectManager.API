@@ -64,3 +64,11 @@ C:\Users\Admin\source\repos\ProjectManager\ProjectManager\obj\Debug\ProjectManag
 C:\Users\Admin\source\repos\ProjectManager\ProjectManager\obj\Debug\ProjectManager.pdb
 C:\Users\Admin\source\repos\ProjectManager\ProjectManager\bin\NLog.dll
 C:\Users\Admin\source\repos\ProjectManager\ProjectManager\bin\NLog.xml
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager\bin\EntityFramework.dll
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager\bin\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager\bin\System.Web.Cors.dll
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager\bin\System.Web.Http.Cors.dll
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager\bin\EntityFramework.xml
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\source\repos\ProjectManager\ProjectManager\bin\System.Web.Http.Cors.xml
