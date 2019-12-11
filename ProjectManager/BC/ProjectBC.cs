@@ -30,7 +30,11 @@ namespace ProjectManager.BC
                     Priority = x.Priority,
                     User = dbContext.Users.Where(y => y.Project_ID == x.Project_ID).Select(z => new MODEL.User()
                     {
-                        UserId = z.User_ID
+                        UserId = z.User_ID,
+                        EmployeeId = z.Employee_ID,
+                        FirstName = z.First_Name,
+                        LastName = z.Last_Name,
+                        ProjectId = z.Project_ID.HasValue ? z.Project_ID.Value : 0
                     }).FirstOrDefault(),
                     NoOfTasks = dbContext.Tasks.Where(y => y.Project_ID == x.Project_ID).Count(),
                     NoOfCompletedTasks = dbContext.Tasks.Where(y => y.Project_ID == x.Project_ID && y.Status == 1).Count(),

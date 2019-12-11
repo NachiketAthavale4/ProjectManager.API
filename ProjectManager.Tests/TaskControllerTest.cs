@@ -85,6 +85,47 @@ namespace ProjectManager.Test
             Assert.AreEqual((result.Data as List<ParentTask>).Count, 2);
         }
 
+        [TestMethod]
+        public void TestInsertTasks_Success()
+        {
+            var context = new MockProjectManagerEntities();
+            var users = new TestDbSet<DAC.User>();
+            users.Add(new DAC.User()
+            {
+                Employee_ID = "654219",
+                First_Name = "Rajesh",
+                Last_Name = "Ray",
+                User_ID = 123,
+                Task_ID = 123
+            });
+            context.Users = users;
+            var task = new ProjectManager.Models.Task()
+            {
+
+                Task_Name = "ASDQW",
+                Parent_ID = 123674,
+                Project_ID = 34856,
+                Start_Date = DateTime.Now,
+                End_Date = DateTime.Now.AddDays(2),
+                Priority = 10,
+                Status = 0,
+                User = new User()
+                {
+                    FirstName = "Rajesh",
+                    LastName = "Ray",
+                    EmployeeId = "654219",
+                    UserId = 1000
+                }
+            };
+
+            var controller = new TaskController(new BC.TaskBC(context));
+            var result = controller.InsertTaskDetails(task) as JSendResponse;
+
+
+            Assert.IsNotNull(result);
+
+            Assert.IsNotNull((context.Users.Local[0]).Task_ID);
+        }
 
         [TestMethod]
         public void TestUpdateProjects_Success()
@@ -373,6 +414,6 @@ namespace ProjectManager.Test
             task.Project_ID = -234;
             var controller = new TaskController(new BC.TaskBC(context));
             var result = controller.DeleteTaskDetails(task) as JSendResponse;
-        }
+        }        
     }
 }

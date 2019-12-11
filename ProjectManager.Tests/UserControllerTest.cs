@@ -86,6 +86,21 @@ namespace ProjectManager.Test
             Assert.AreEqual((result.Data as List<User>).Count, 2);
         }
 
+        [TestMethod]
+        public void TestInsertUser_Success()
+        {
+            var context = new MockProjectManagerEntities();
+            var user = new Models.User();
+            user.FirstName = "ankita";
+            user.LastName = "ghosh";
+            user.EmployeeId = "123456";
+            user.UserId = 123;
+            var controller = new UserController(new BC.UserBC(context));
+            var result = controller.InsertUserDetails(user) as JSendResponse;
+
+            Assert.IsNotNull(result);
+            Assert.AreEqual(result.Data, 1);
+        }
 
         [TestMethod]
         public void TestUpdateUser_Success()

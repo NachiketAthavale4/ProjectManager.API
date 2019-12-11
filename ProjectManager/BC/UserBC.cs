@@ -30,6 +30,7 @@ namespace ProjectManager.BC
                     FirstName = x.First_Name,
                     LastName = x.Last_Name,
                     EmployeeId = x.Employee_ID,
+                    ProjectId = x.Project_ID.HasValue? x.Project_ID.Value : 0,
                     UserId = x.User_ID
                 }).ToList();
             }
