@@ -36,7 +36,10 @@ namespace ProjectManager.BC
                     User = dbContext.Users.Where(y => y.Task_ID == x.Task_ID).Select(z => new User()
                     {
                         UserId = z.User_ID,
-                        FirstName = z.First_Name
+                        FirstName = z.First_Name,
+                        EmployeeId = z.Employee_ID,
+                        LastName = z.Last_Name,
+                        ProjectId = z.Project_ID.HasValue ? z.Project_ID.Value : 0
                     }).FirstOrDefault(),
                 }).ToList();
             }
@@ -112,7 +115,7 @@ namespace ProjectManager.BC
                     editDetails.End_Date = task.End_Date;
                     editDetails.Status = task.Status;
                     editDetails.Priority = task.Priority;
-
+                    editDetails.Task_ID = task.TaskId;
                 }
                 var editDetailsUser = (from editUser in dbContext.Users
                                        where editUser.User_ID.ToString().Contains(task.User.UserId.ToString())
@@ -120,7 +123,7 @@ namespace ProjectManager.BC
                 // Modify existing records
                 if (editDetailsUser != null)
                 {
-                    editDetails.Task_ID = task.TaskId;
+                    editDetailsUser.Task_ID = task.TaskId;
                 }
                 return dbContext.SaveChanges();
             }
